@@ -1,0 +1,113 @@
+@import "../OverAll.scss";
+
+* {
+  @include overAll;
+}
+
+body {
+  background: $primaryColor;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3rem;
+    position: sticky;
+    top: 0;
+    background: $primaryColor;
+    width: 100%;
+    .title-header {
+      display: flex;
+      align-items: center;
+      img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+      }
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      svg {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        margin: 0 2px;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    .nav ul {
+      display: flex;
+      li {
+        margin: 0 15px;
+        list-style: none;
+        a {
+          color: $secondaryColor;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          font-weight: bold;
+          &:hover {
+            color: $txtColor;
+          }
+        }
+      }
+    }
+  
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $txtColor;
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      padding: 3px;
+      span {
+        display: block;
+        margin: 3px 0;
+        width: 25px;
+        height: 3px;
+        border-radius: 20px;
+        background: $secondaryColor;
+      }
+    }
+  
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: $primaryColor;
+      z-index: 122;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+  
+      a {
+        padding: 5px 25px 5px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        color: $secondaryColor;
+        display: block;
+        transition: 0.3s;
+      }
+  
+      .closebtn {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        font-size: 36px;
+      }
+    }
+  }

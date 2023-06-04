@@ -135,4 +135,35 @@ header {
       @include textStyle(1rem, bold, $secondaryColor);
     }
   }
+  main {
+    display: flex;
+    width: 75%;
+    @include boxStyle;
+    @include bodyStyle;
+    img {
+      width: 250px;
+      display: block;
+      background-color: $txtColor;
+      border-radius: 15px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      @include boxStyle;
+    }
+
+    .title-main {
+      margin: 0 1.5rem;
+      p {
+        @include textStyle(3rem, bold, $txtColor);
+        margin: 2rem 0 3rem;
+        text-align: justify;
+        span {
+          @include textStyle(3rem, bold, $secondaryColor);
+          border-bottom: 1px solid $secondaryColor;
+        }
+      }
+    }
+
+    p {
+      @include textStyle(2rem, bold, $secondaryColor);
+    }
+  }
 }

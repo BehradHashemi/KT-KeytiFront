@@ -42,7 +42,7 @@ header .icon svg {
   border: none;
   border-radius: 15px;
   margin: 0 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
   color: #fff;
 }
@@ -185,6 +185,41 @@ header .sidebar .closeBtn {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 30px;
+}
+footer .about-us {
+  width: 50%;
+}
+footer .about-us p {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .links {
+  padding: 0 5rem;
+}
+footer .links ul {
+  list-style: none;
+}
+footer .links a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: all 0.15s ease-in;
+}
+footer .links a:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=index.css.map */

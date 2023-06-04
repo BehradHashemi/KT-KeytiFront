@@ -39,7 +39,7 @@ header {
       border: none;
       border-radius: 15px;
       margin: 0 2px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background: $txtColor;
       cursor: pointer;
       color: #fff;
     }
@@ -164,6 +164,42 @@ header {
 
     p {
       @include textStyle(2rem, bold, $secondaryColor);
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background: $txtColor;
+  margin-top: 30px;
+
+  .about-us {
+    width: 50%;
+    p {
+      text-align: justify;
+      @include textStyle(1.2rem, 300, $txtColor);
+    }
+  }
+
+  .links {
+    padding: 0 5rem;
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      @include textStyle(1.2rem, bold, $secondaryColor);
+      margin-bottom: 10px;
+      display: inline-block;
+      transition: all 0.15s ease-in;
+
+      &:hover {
+        color: $txtColor;
+      }
     }
   }
 }

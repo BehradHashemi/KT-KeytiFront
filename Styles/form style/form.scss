@@ -1,10 +1,17 @@
 @import "../OverAll.scss";
 
+.arrowBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 * {
   @include overAll;
 }
 
 body {
+  position: relative;
   background: $primaryColor;
   height: 600px;
   padding: 1rem;

@@ -22,7 +22,7 @@ $txtColor: rgb(255, 255, 255, 0.5);
 }
 
 @mixin bodyStyle {
-  background: $txtColor;
+  background: $primaryColor;
   height: 600px;
   padding: 1rem;
   display: flex;

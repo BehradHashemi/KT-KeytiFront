@@ -1,3 +1,9 @@
+.arrowBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +12,7 @@
 }
 
 body {
+  position: relative;
   background: #8400ff;
   height: 600px;
   padding: 1rem;

@@ -203,3 +203,54 @@ footer {
     }
   }
 }
+
+// responsive
+@include media(M) {
+  header {
+    padding: 10px 1rem;
+    .hamburger-menu {
+      display: flex;
+    }
+    .title-header {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    margin: 1rem;
+
+    main {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 20px;
+      flex-direction: column-reverse;
+      .title-main {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    aside {
+      width: 100%;
+      height: 600px;
+    }
+  }
+  footer {
+    flex-direction: column;
+
+    .about-us {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .links {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

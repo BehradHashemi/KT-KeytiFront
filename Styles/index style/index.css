@@ -93,6 +93,7 @@ header .sidebar {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  text-align: center;
 }
 header .sidebar a {
   padding: 5px 25px 5px 32px;

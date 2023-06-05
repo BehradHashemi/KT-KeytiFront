@@ -1,17 +1,19 @@
-const loginText = document.querySelector(".title-text .login");
-const loginForm = document.querySelector("form.login");
-const loginBtn = document.querySelector("label.login");
-const signupBtn = document.querySelector("label.signup");
-const signupLink = document.querySelector("form .signup-link a");
-signupBtn.onclick = (() => {
-    loginForm.style.marginLeft = "-50%";
-    loginText.style.marginLeft = "-50%";
-});
-loginBtn.onclick = (() => {
-    loginForm.style.marginLeft = "0%";
-    loginText.style.marginLeft = "0%";
-});
-signupLink.onclick = (() => {
-    signupBtn.click();
-    return false;
-});
+const displayForm1 = document.querySelector(".signIn-div")
+const displayForm2 = document.querySelector(".signUp-div")
+// -----------------------------------------------------------------------
+const showSignUp = document.querySelector(".showSignUp")
+const showSignIn = document.querySelector(".showSignIn")
+// -----------------------------------------------------------------------
+showSignUp.addEventListener("click", displaySignUp)
+showSignIn.addEventListener("click", displaySignIn)
+
+function displaySignUp(event) {
+    event.preventDefault()
+    displayForm1.style.display = "none";
+    displayForm2.style.display = "flex";
+}
+function displaySignIn(event) {
+    event.preventDefault()
+    displayForm2.style.display = "none";
+    displayForm1.style.display = "flex";
+}

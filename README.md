@@ -6,6 +6,7 @@ Input:
 - `CSS`
 - `scss`
 - `JS`
+- `node.js`
 
 ## Social
 
@@ -17,10 +18,11 @@ Input:
 #### Version 1
 - It's just front-End
 #### version 2 <sub>Updating
+  - adding a store and buying a product
 - sign in or sign up in website
   
 ## Notes:
 ```
 CopyRight
 ```
-  - special thanks [@Sepehr](https://github.com/SepehrMirlohi)
+  - thanks [@Mohammad](https://github.com/Mohammadsdq)
